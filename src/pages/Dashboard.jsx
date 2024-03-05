@@ -62,7 +62,7 @@ const Dashboard = () => {
     );
   }
   return (
-    <section className="bg-darkGreen w-[100%]  min-h-[100%] md:h-[100vh]">
+    <section className=" w-[100%]  min-h-[100%] md:h-[100vh]">
       <Toaster position="top" />
       <Modal
         isOpen={modal}

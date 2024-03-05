@@ -90,6 +90,15 @@ const Form2 = ({data,method})=>{
                  <div className="w-[3rem] h-[3rem] rounded-full border border-white flex items-center justify-center px-4">4</div>
                  <input onChange={setValue} name="sponsors_number" value={data.sponsors_number} type="text" className=" bg-transparent text-white outline-none flex-1 border-b border-b-white" placeholder="Enter Your Sponsor's Phone number" />
               </div>
+              <div className="flex space-x-5 w-[100%] px-3 items-center">
+                 <div className="w-[3rem] h-[3rem] rounded-full border border-white flex items-center justify-center px-4">5</div>
+                 <input onChange={setValue} name="nextofkin_number" value={data.nextofkin_number} type="text" className=" bg-transparent text-white outline-none flex-1 border-b border-b-white" placeholder="Enter Next of Kin's Phone number" />
+              </div>
+              <div className="flex space-x-5 w-[100%] px-3 items-center">
+                 <div className="w-[3rem] h-[3rem] rounded-full border border-white flex items-center justify-center px-4">6</div>
+                 <input onChange={setValue} name="sponsors_number" value={data.sponsors_number} type="text" className=" bg-transparent text-white outline-none flex-1 border-b border-b-white" placeholder="Enter Your Sponsor's Phone number" />
+              </div>
+              
           </div>
         </div>
     )
@@ -180,7 +189,7 @@ const ApplicationForm = ()=>{
                 if(Object.values(form1).findIndex(v=>v=='')>-1){
                     Swal.fire({
                         icon:'error',
-                        titleText:'Opp!',
+                        titleText:'Oops!',
                         text:'All fields are required!'
                     })
                 }else{
@@ -191,7 +200,7 @@ const ApplicationForm = ()=>{
                     if(Object.values(form2).findIndex(v=>v=='')>-1){
                         Swal.fire({
                             icon:'error',
-                            titleText:'Opp!',
+                            titleText:'Oops!',
                             text:'All fields are required!'
                         })
                     }else{
@@ -259,11 +268,11 @@ setLoader(false)
                       })
                   }
         }}  style={'bg-cyan-500'}>Submit</PrimaryButton>}
-
+        
 </div>
 </>)}
 
-<div className="w-[100%] absolute bottom-0">
+<div className="w-[100%]">
 <Footer/>
 
 </div>

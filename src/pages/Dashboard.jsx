@@ -15,7 +15,7 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    backgroundColor: '#0b3105',
+    backgroundColor: 'black',
     color: '#ccc',
     borderRadius: 10,
   },
@@ -70,7 +70,7 @@ const Dashboard = () => {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <div className="flex flex-col md:flex-row md:space-y-0 md:space-x-8 space-y-2 bg-black text-white p-8">
+        <div className="flex flex-col md:flex-row md:space-y-0 md:space-x-8 space-y-2 bg-black text-white p-8 h-[80vh] overflow-y-scroll md:overflow-hidden">
    <div className='flex flex-col space-y-3'>
    <div className='flex items-center space-x-4'>
         <div className='w-[3rem] h-[3rem] border border-white rounded-full flex items-center justify-center'>1</div>
@@ -113,6 +113,10 @@ const Dashboard = () => {
        <div className='flex space-x-2'>
          <h2>Sponsor&apos;s Number:</h2>
          <p>{selected?.sponsors_number}</p>
+       </div>
+       <div className='flex space-x-2'>
+         <h2>Next of Kin&apos;s Number:</h2>
+         <p>{selected?.nextofkin_number}</p>
        </div>
        <div className='flex space-x-2'>
          <h2>State Of Origin:</h2>
@@ -228,7 +232,7 @@ Close
               <PrimaryButton onSubmit={()=>{
                 auth.logout()
               }} style={'px-4'}>
-                logout
+                Log out
               </PrimaryButton>
             </div>
           </div>

@@ -1,5 +1,4 @@
 import { PrimaryButton } from "../ui/Buttons"
-import img1 from '../../assets/images/bg.jpg'
 import { useRef,useEffect } from "react"
 import Typed from 'typed.js'
 import { Link } from "react-router-dom"

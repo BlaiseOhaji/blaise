@@ -94,10 +94,6 @@ const Form2 = ({data,method})=>{
                  <div className="w-[3rem] h-[3rem] rounded-full border border-white flex items-center justify-center px-4">5</div>
                  <input onChange={setValue} name="nextofkin_number" value={data.nextofkin_number} type="text" className=" bg-transparent text-white outline-none flex-1 border-b border-b-white" placeholder="Enter Next of Kin's Phone number" />
               </div>
-              <div className="flex space-x-5 w-[100%] px-3 items-center">
-                 <div className="w-[3rem] h-[3rem] rounded-full border border-white flex items-center justify-center px-4">6</div>
-                 <input onChange={setValue} name="sponsors_number" value={data.sponsors_number} type="text" className=" bg-transparent text-white outline-none flex-1 border-b border-b-white" placeholder="Enter Your Sponsor's Phone number" />
-              </div>
               
           </div>
         </div>
@@ -138,15 +134,15 @@ const Form3 = ({data,method})=>{
         </div>
         <div className="flex space-x-5 w-[100%] px-3 items-center">
            <div className="w-[3rem] h-[3rem] rounded-full border border-white flex items-center justify-center px-4">5</div>
-           <input type="text" name="q5" value={data.q5} onChange={setValue} className=" bg-transparent text-white outline-none flex-1 border-b border-b-white" placeholder="Have you ever served in any state/country before? Indicate where if yes." />
+           <input type="text" name="q5" value={data.q5} onChange={setValue} className=" bg-transparent text-white outline-none flex-1 border-b border-b-white" placeholder="Have you ever served in any state/country before?" />
         </div>
         <div className="flex space-x-5 w-[100%] px-3 items-center">
            <div className="w-[3rem] h-[3rem] rounded-full border border-white flex items-center justify-center px-4">6</div>
-           <input type="text" name="q6" value={data.q6} onChange={setValue} className=" bg-transparent text-white outline-none flex-1 border-b border-b-white" placeholder="Input any specific department you would like to be posted to. Comment 'No Preferences' if none" />
+           <input type="text" name="q6" value={data.q6} onChange={setValue} className=" bg-transparent text-white outline-none flex-1 border-b border-b-white" placeholder="Do you have any preference for a specific department?" />
         </div>
         <div className="flex space-x-5 w-[100%] px-3 items-center">
            <div className="w-[3rem] h-[3rem] rounded-full border border-white flex items-center justify-center px-4">7</div>
-           <input type="text" name="q7" value={data.q7} onChange={setValue} className=" bg-transparent text-white outline-none flex-1 border-b border-b-white" placeholder="Provide your National Identification Number (NIN) here. This is necessary for a full background check." />
+           <input type="text" name="q7" value={data.q7} onChange={setValue} className=" bg-transparent text-white outline-none flex-1 border-b border-b-white" placeholder="Provide your NIN here for a full background check." />
         </div>
     </div>
   </div>
@@ -271,11 +267,6 @@ setLoader(false)
         
 </div>
 </>)}
-
-<div className="w-[100%]">
-<Footer/>
-
-</div>
         </div>
     )
 }
